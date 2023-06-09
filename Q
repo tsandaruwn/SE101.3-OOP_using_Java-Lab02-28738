@@ -1,0 +1,53 @@
+package com.mycompany.itemobj;
+public class Item 
+{
+    private int location;
+    private String description;
+    
+    public Item(int location,String description)
+    {
+        this.location=location;
+        this.description=description;
+    }
+    
+    public void getLocation(int location)
+    {
+        this.location=location;
+    }
+    public void getDescription(String description)
+    {
+        this.description=description;
+    }
+    public int setLocation()
+    {
+        return location;
+    }
+    public String setDescription()
+    {
+        return description;
+    }
+}
+
+
+
+
+public class Monster extends Item
+{
+    private int location1;
+    private String description1;
+    
+    public Monster(int location,String description,int location1,String description1)
+    {
+        super(location,description);
+        this.description1=description1;
+        this.location1=location1;
+    }
+}
+
+package com.mycompany.itemobj;
+public class ItemObj{
+public static void main(String[] args) 
+    {
+        Monster m1=new Monster(5678,"NON",1234,"non" 
+}
+}
